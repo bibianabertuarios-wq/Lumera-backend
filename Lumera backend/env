@@ -1,0 +1,53 @@
+# ============================================================
+# STRIPE KEYS (TESTING MODE)
+# ============================================================
+# Ve a: Stripe Dashboard → Settings → API Keys
+STRIPE_SECRET_KEY=sk_test_51Sejh162SZ6DF120XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+STRIPE_PUBLISHABLE_KEY=pk_test_51Sejh162SZ6DF120ogS0E67ngoK4aE2C2xRW0pMJcfwWxaQq1UJ7Sxzr0zrPfqnHdk1aa5VLyu91fFDBdKnFLn6b00BS7k0uvU
+
+# ============================================================
+# STRIPE PRICE IDs (YA LOS TIENES - NO CAMBIAR)
+# ============================================================
+STRIPE_PRICE_LATAM_MONTHLY=price_1Sejoa62SZ6DF12Ox5sU1Y9v
+STRIPE_PRICE_EMEA_MONTHLY=price_1Sejso62SZ6DF12O5eSsNiGQ
+STRIPE_PRICE_USA_MONTHLY=price_1Sejuh62SZ6DF12OUR0k19Rd
+STRIPE_COUPON_LAUNCH40=LAUNCH40
+
+# ============================================================
+# STRIPE WEBHOOK (DESPUÉS DE CREAR EN STRIPE)
+# ============================================================
+# Ve a: Stripe Dashboard → Developers → Webhooks
+# Copia el "Signing Secret" (empieza con whsec_)
+STRIPE_WEBHOOK_SECRET=whsec_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+# ============================================================
+# SUPABASE (YA TIENES - NO CAMBIAR)
+# ============================================================
+SUPABASE_URL=https://pyekwpmbdnmglrjieexc.supabase.co
+SUPABASE_PUBLISHABLE_KEY=sb_publishable_ywNGyzN8vH6tdAy0xYNVFQ_gxiL64ii
+
+# ============================================================
+# SUPABASE SERVICE ROLE (IMPORTANTE - PRIVADA)
+# ============================================================
+# Ve a: Supabase → Settings → API → Service Role Secret
+# IMPORTANTE: Haz "Rotate" para generar una nueva clave
+SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+# ============================================================
+# SERVER CONFIG
+# ============================================================
+PORT=3000
+NODE_ENV=development
+BACKEND_URL=http://localhost:3000
+
+# Para producción (cambiar después):
+# NODE_ENV=production
+# BACKEND_URL=https://tu-dominio.com
+# STRIPE_SECRET_KEY=sk_live_... (cambiar a LIVE)
+
+# ============================================================
+# CORS ALLOWED ORIGINS
+# ============================================================
+FRONTEND_URL=http://localhost:3000
+# Para producción:
+# FRONTEND_URL=https://tu-app.com
