@@ -438,3 +438,12 @@ app.listen(PORT, HOST, () => {
     console.log(`🏥 Health check: /health`);
     console.log(`📊 Webhook: /webhook/stripe\n`);
 });
+// Manejar errores no capturados
+process.on('unhandledRejection', (reason, promise) => {
+    console.error('❌ Unhandled Rejection:', reason);
+});
+
+process.on('uncaughtException', (error) => {
+    console.error('❌ Uncaught Exception:', error);
+    process.exit(1);
+});
