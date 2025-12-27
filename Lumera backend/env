@@ -2,7 +2,7 @@
 # STRIPE KEYS (TESTING MODE)
 # ============================================================
 # Ve a: Stripe Dashboard → Settings → API Keys
-STRIPE_SECRET_KEY=sk_test_51Sejh162SZ6DF120XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+STRIPE_SECRET_KEY=sk_test_51Sejh162SZ6DF12ORWcBxp8epe8gDutlpcuaUEweSsIPc5nYPHZZI9I56Q8xIDFGvibfiGOKBiXzxxjjg8pKACOT00zdPleIHz
 STRIPE_PUBLISHABLE_KEY=pk_test_51Sejh162SZ6DF120ogS0E67ngoK4aE2C2xRW0pMJcfwWxaQq1UJ7Sxzr0zrPfqnHdk1aa5VLyu91fFDBdKnFLn6b00BS7k0uvU
 
 # ============================================================
