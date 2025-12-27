@@ -433,7 +433,8 @@ const PORT = process.env.PORT || 3000;
 const HOST = '0.0.0.0';
 
 app.listen(PORT, HOST, () => {
-    console.log(`\n✅ Backend corriendo en http://${HOST}:${PORT}`);
-    console.log(`📊 Webhook: http://${HOST}:${PORT}/webhook/stripe`);
-    console.log(`🏥 Health: http://${HOST}:${PORT}/health\n`);
+    console.log(`\n✅ Backend corriendo en puerto ${PORT}`);
+    console.log(`📊 Entorno: ${process.env.NODE_ENV || 'development'}`);
+    console.log(`🏥 Health check: /health`);
+    console.log(`📊 Webhook: /webhook/stripe\n`);
 });
