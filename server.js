@@ -426,13 +426,14 @@ app.use((err, req, res, next) => {
         message: process.env.NODE_ENV === 'development' ? err.message : undefined
     });
 });
-
 // ============================================================
 // INICIAR SERVIDOR
 // ============================================================
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`\n✅ Backend corriendo en http://localhost:${PORT}`);
-    console.log(`📊 Webhook: http://localhost:${PORT}/webhook/stripe`);
-    console.log(`🏥 Health: http://localhost:${PORT}/health\n`);
+const HOST = '0.0.0.0';
+
+app.listen(PORT, HOST, () => {
+    console.log(`\n✅ Backend corriendo en http://${HOST}:${PORT}`);
+    console.log(`📊 Webhook: http://${HOST}:${PORT}/webhook/stripe`);
+    console.log(`🏥 Health: http://${HOST}:${PORT}/health\n`);
 });
