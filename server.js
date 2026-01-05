@@ -14,8 +14,8 @@ app.use(cors({
         'http://localhost:3000',
         'http://localhost:8000',
         'http://localhost:3001',
-        'https://lumera-two.vercel.app',        
-    
+        'https://lumera-two.vercel.app', 
+        'https://lumera-git-main-bibianas-projects-fd4c537d.vercel.app',    
         'https://bibianabertuarios-wq.github.io',
         'https://lumera.app'
     ],
