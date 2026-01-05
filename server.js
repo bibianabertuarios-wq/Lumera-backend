@@ -22,10 +22,7 @@ app.use(cors({
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']
-}));    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization']
-}));
-
+})); 
 // Para webhook de Stripe (debe ser RAW BODY)
 app.use('/webhook/stripe', express.raw({ type: 'application/json' }));
 
