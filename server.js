@@ -12,13 +12,17 @@ const app = express();
 app.use(cors({
     origin: [
         'http://localhost:3000',
+        'http://localhost:8000',
         'http://localhost:3001',
-        'http://127.0.0.1:3000',
-        'https://bibianabertuarios-wq.github.io', // TU DOMINIO GITHUB PAGES
-        'https://lumera.app' // POR SI LO CAMBIAS
+        'https://lumera-two.vercel.app',        
+    
+        'https://bibianabertuarios-wq.github.io',
+        'https://lumera.app'
     ],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
